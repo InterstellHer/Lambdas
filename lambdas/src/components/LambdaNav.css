@@ -19,3 +19,9 @@
 .offcanvas-body .nav-link {
     font-size: 1.25rem; /* Adjust this value as needed */
 }
+
+.navbar-brand img, .offcanvas-title img {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
