@@ -16,6 +16,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 // Import assets
 import ncsu_logo from './assets/images/ncsu_logo.png'
+import lphie_logo from './assets/images/lphie_logo.png'
 
 /**
  * Definition and properties for an offcanvas example navigation bar. This
@@ -32,7 +33,9 @@ function OffcanvasExample() {
                 <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
                     <Container fluid>
                         {/* Brand name link */}
-                        <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+                        <Navbar.Brand href="#">
+                            <img src={lphie_logo} alt="Logo" style={{ height: '80px' }} />
+                        </Navbar.Brand>
                         {/* Toggle button for collapsing the navbar */}
                         <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
                         {/* Offcanvas component for responsive behavior */}
