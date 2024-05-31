@@ -1,0 +1,21 @@
+/* Remove the caret symbol on the dropdown */
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Ensure the Offcanvas header items are centered vertically */
+.offcanvas-header {
+    position: relative;
+}
+
+/* Position the close button in the top right corner */
+.offcanvas-header .btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Increase the font size for the nav links */
+.offcanvas-body .nav-link {
+    font-size: 1.25rem; /* Adjust this value as needed */
+}
