@@ -1,27 +1,33 @@
-/* Remove the caret symbol on the dropdown */
-.dropdown-toggle::after {
-    display: none !important;
+/* Custom font styles for nav links */
+.nav-link-fonts {
+    font-size: 1.25rem !important; /* Adjust this value as needed */
+    font-family: 'YourCustomFont', sans-serif; /* Replace 'YourCustomFont' with your desired font family */
+    color: #333; /* Adjust the color as needed */
 }
 
-/* Ensure the Offcanvas header items are centered vertically */
-.offcanvas-header {
-    position: relative;
+/* Position the toggle button in the top right corner */
+.navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px; /* Adjust the margin as needed */
 }
 
-/* Position the close button in the top right corner */
+/* Position the close button in the top right corner of the offcanvas */
 .offcanvas-header .btn-close {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-/* Increase the font size for the nav links */
-.offcanvas-body .nav-link {
-    font-size: 1.25rem; /* Adjust this value as needed */
+/* App.css */
+
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform .6s ease-in-out;
 }
 
-.navbar-brand img, .offcanvas-title img {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
+.navbar-visible {
+    transform: translateY(0);
+    transition: transform .6s ease-in-out;
 }
